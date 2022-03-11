@@ -13,6 +13,7 @@ import TasksPage from "./pages/TasksPage";
 import AdminPage from "./pages/AdminPage";
 
 import Header from "./components/header/Header";
+import Login from "./pages/Login";
 
 const MainRoutes = () => {
   return (
@@ -20,6 +21,8 @@ const MainRoutes = () => {
       <Header />
       <Routes>
         <Route path="/" element={<MainPage />} />
+        <Route path="/login" element={Login}/>
+        {/* <Route path="/signin" element={}/> */}
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/flora_and_fauna" element={<FloraAndFaunaPage />} />
@@ -30,6 +33,7 @@ const MainRoutes = () => {
         <Route path="/regulations" element={<RegulationsPage />} />
         <Route path="/tasks" element={<TasksPage />} />
         <Route path="/admin" element={<AdminPage />} />
+        {/* <Route path="/admin/userList" element={<AdminPage />} /> */}
       </Routes>
     </BrowserRouter>
   );
