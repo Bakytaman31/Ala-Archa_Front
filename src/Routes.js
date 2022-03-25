@@ -14,11 +14,12 @@ import AdminPage from "./pages/AdminPage";
 
 import Header from "./components/header/Header";
 import Login from "./pages/Login";
+import Footer from "./components/footer/Footer";
 
 const MainRoutes = () => {
   return (
     <BrowserRouter>
-      <Header />
+      <Header/>
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/login" element={Login}/>
@@ -35,6 +36,7 @@ const MainRoutes = () => {
         <Route path="/admin" element={<AdminPage />} />
         {/* <Route path="/admin/userList" element={<AdminPage />} /> */}
       </Routes>
+      {/* <Footer/> */}
     </BrowserRouter>
   );
 };

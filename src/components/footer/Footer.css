@@ -1,0 +1,54 @@
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer {
+    height: 390px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.partners {
+    height: 130px;
+}
+
+.footerContent {
+    height: 221.33px;
+    display: flex;
+    font-size: 18px;
+}
+
+.footerContent .logo {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+}
+
+.moreContent {
+    margin-left: 10%;
+}
+
+.moreContent li a {
+    color: #0A142F;
+}
+
+.media {
+    width: 100px;
+}
+
+.mediaList{
+    display: flex;
+    justify-content: space-between;
+}

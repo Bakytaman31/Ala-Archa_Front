@@ -1,50 +1,100 @@
-header {
-    background-color: #00dd9f;
-    color: #ffffff;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .navbar__right {
-    width: 600px;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-  }
-  
-  .navbar__right input {
-    width: 80%;
-    background-color: #ffffff;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    padding: 5px;
-  }
-  .navbar__right li,
-  img {
-    width: 25%;
-    text-align: center;
-    letter-spacing: 0.5px;
-  }
-  a:-webkit-any-link {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 700;
-  }
-  
-  
-  
-  .header__search-input input {
-    color: #000a07;
-    width: 90%;
-    padding: 5.5%;
-    letter-spacing: 1px;
-  }
+* {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 100%;
+  background-image: url('../../assets/background.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  height: 1080px;
+  background-size: cover;
+}
+
+.navbar {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 45px;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.logo {
+  width: 5%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.links {
+  width: 40%;
+}
+
+.links a{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.links ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icons {
+  width: 12%;
+}
+
+.icons ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.wrapperText {
+  text-align: center;
+}
+
+.wrapperText .title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 144px;
+  line-height: 169px;
+  margin-bottom: 0;
+}
+
+.wrapperText .subTitle {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 96px;
+  line-height: 113px;
+  margin-top: 20px;
+  margin-bottom: 180px;
+}
+
+button {
+  background: #238FF2;
+  border-radius: 33px;
+  width: 330px;
+  height: 100px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+}
