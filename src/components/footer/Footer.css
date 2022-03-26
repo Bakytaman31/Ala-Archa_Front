@@ -23,7 +23,7 @@ a {
 
 .footerContent {
     height: 221.33px;
-    display: flex;
+    display: flex; 
     font-size: 18px;
 }
 
@@ -36,6 +36,16 @@ a {
     color: #000000;
 }
 
+.footerContent .title {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 40px;
+    margin-right: 52px;
+}
+
 .moreContent {
     margin-left: 10%;
 }
@@ -46,9 +56,26 @@ a {
 
 .media {
     width: 100px;
+    margin-left: 500px;
 }
 
 .mediaList{
     display: flex;
     justify-content: space-between;
+}
+
+.bottomFooter {
+    mix-blend-mode: normal;
+    opacity: 0.2;
+    border: 1px solid #4A4A4A;
+}
+
+.bottomFooter p {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #0A142F;
 }

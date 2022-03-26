@@ -12,7 +12,8 @@ import './Footer.css';
 
 function Footer() {
   return (
-    <div className='footer'>
+      <div>
+          <div className='footer'>
         <div className='partners'>
             <img src={logo1} alt='#'/>
             <img src={logo2} alt='#'/>
@@ -26,7 +27,7 @@ function Footer() {
         <div className='footerContent'>
             <p className='logo'>LOGO</p>
             <div className='moreContent'>
-                <p>Узнать больше</p>
+                <p className='title'>Узнать больше</p>
                 <ul>
                     <li><a href='#'>О нас</a></li>
                     <li><a href='#'>Природа</a></li>
@@ -35,14 +36,14 @@ function Footer() {
                 </ul>
             </div>
             <div className='contacts'>
-                <p>Контакты</p>
+                <p className='title'>Контакты</p>
                 <ul>
                     <li>Отель <span>+996 123 456 789</span></li>
                     <li>Вход <span>+996 123 456 789</span></li>
                 </ul>
             </div>
             <div className='media'>
-                <p>Медиа</p>
+                <p className='title'>Медиа</p>
                 <ul className='mediaList'>
                     <li><FaFacebookF/></li>
                     <li><FaInstagram/></li>
@@ -51,7 +52,13 @@ function Footer() {
                 </ul>
             </div>
         </div>
+        
     </div>
+    <div className='bottomFooter'>
+            <p>© 2022 INAI | All Rights Reserved</p>
+        </div>
+      </div>
+    
   )
 }
 

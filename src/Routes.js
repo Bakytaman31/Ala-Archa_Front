@@ -36,7 +36,7 @@ const MainRoutes = () => {
         <Route path="/admin" element={<AdminPage />} />
         {/* <Route path="/admin/userList" element={<AdminPage />} /> */}
       </Routes>
-      {/* <Footer/> */}
+      <Footer/>
     </BrowserRouter>
   );
 };
