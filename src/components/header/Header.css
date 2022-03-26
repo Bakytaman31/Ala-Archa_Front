@@ -1,13 +1,10 @@
-* {
-  font-family: 'Raleway', sans-serif;
-  color: white;
-}
-
 a {
   text-decoration: none;
 }
 
 .wrapper {
+  font-family: 'Raleway', sans-serif;
+  color: white;
   width: 100%;
   background-image: url('../../assets/background.png');
   background-repeat: no-repeat;
@@ -38,6 +35,8 @@ a {
 }
 
 .links a{
+  font-family: 'Raleway', sans-serif;
+  color: white;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -60,6 +59,8 @@ a {
 }
 
 .icons a {
+  font-family: 'Raleway', sans-serif;
+  color: white;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -72,6 +73,8 @@ a {
 }
 
 .wrapperText .title {
+  font-family: 'Raleway', sans-serif;
+  color: white;
   font-style: normal;
   font-weight: 800;
   font-size: 144px;
@@ -80,6 +83,8 @@ a {
 }
 
 .wrapperText .subTitle {
+  font-family: 'Raleway', sans-serif;
+  color: white;
   font-style: normal;
   font-weight: 800;
   font-size: 96px;
@@ -89,6 +94,8 @@ a {
 }
 
 button {
+  font-family: 'Raleway', sans-serif;
+  color: white;
   background: #238FF2;
   border-radius: 33px;
   width: 330px;
@@ -97,4 +104,5 @@ button {
   font-weight: 600;
   font-size: 36px;
   line-height: 42px;
+  border: none;
 }

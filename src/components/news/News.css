@@ -1,0 +1,29 @@
+.news .title {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.newsBlocks {
+    display: flex;
+    justify-content: space-around;
+}
+
+.newsBlocks img {
+    width: 100%;
+}
+
+.smallBlock {
+    width: 300px;
+}
+
+.smallBlock img:last-child {
+    margin-top: 25px;
+}
+
+.bigBlock {
+    width: 635px;
+}

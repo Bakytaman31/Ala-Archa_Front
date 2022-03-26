@@ -18,7 +18,7 @@ function Footer() {
             <img src={logo2} alt='#'/>
             <img src={logo3} alt='#'/>
             <img src={logo4} alt='#'/>
-            <img src={logo1} alt='#'/>
+            <img src={logo1} alt='#' style={{"margin-left": "6rem"}}/>
             <img src={logo2} alt='#'/>
             <img src={logo3} alt='#'/>
             <img src={logo4} alt='#'/>
