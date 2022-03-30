@@ -1,6 +1,15 @@
 .map {
     margin: 0 auto;
     text-align: center;
+    
+}
+
+.map img {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
 }
 
 .title {

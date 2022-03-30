@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+ */
+
+ .MainPage_container {
+  width: 75%;
+  padding: 5rem;
+  margin-top: 1rem;
+  height: 100%;
+  border-radius: 5rem;
+  background-color: white;
+  box-shadow: inset;
+
+  -webkit-box-shadow: -6px 6px 60px 39px rgba(0, 0, 0, 0.2);
+-moz-box-shadow: -6px 6px 60px 39px rgba(0, 0, 0, 0.2);
+box-shadow: -6px 6px 60px 39px rgba(0, 0, 0, 0.2);
+ }

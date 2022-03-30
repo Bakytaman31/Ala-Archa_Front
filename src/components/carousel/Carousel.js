@@ -20,14 +20,25 @@ const Caroгsel = () => {
   };
 
   return (
-    <>
-      <Carousel
-        slides={slides}
-        autoplay={true}
-        interval={1500}
-        onSlideChange={callback}
-      />
-    </>
+    <center>
+      <div className="carousel">
+        <Carousel
+          style={{ background: "none" }}
+          slides={slides}
+          autoplay={true}
+          interval={2000}
+          onSlideChange={callback}
+        />
+      </div>
+      <div className="carousel_underText">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quam
+          odit ab voluptates consequuntur nesciunt perferendis minus odio
+          excepturi molestias quod iure molestiae, et mollitia exercitationem
+          velit consequatur animi debitis?
+        </p>
+      </div>
+    </center>
   );
 };
 
