@@ -1,3 +1,17 @@
-* {
-    margin: 1rem 0 ;
+
+.carousel {
+    height: 30vw;
+    padding-right: 12rem;
+}
+
+.carousel_underText {
+    width: 70%;
+    margin-bottom: 2rem;
+
+}
+
+.carousel_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

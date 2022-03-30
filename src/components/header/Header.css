@@ -3,43 +3,49 @@ a {
 }
 
 .wrapper {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: white;
   width: 100%;
-  background-image: url('../../assets/background.png');
+  background-image: url("../../assets/background.png");
   background-repeat: no-repeat;
-  background-position: 0 0;
-  height: 1080px;
+  background-position: center;
   background-size: cover;
+  height: 100vh;
+  -webkit-box-shadow: 1px 77px 52px -36px rgba(12, 13, 13, 0.4) inset;
+  -moz-box-shadow: 1px 77px 52px -36px rgba(12, 13, 13, 0.4) inset;
+  box-shadow: 1px 77px 52px -36px rgba(12, 13, 13, 0.4) inset;
 }
 
 .navbar {
   width: 100%;
   margin: 0 auto;
-  padding-top: 45px;
+  padding-top: 1rem;
   display: flex;
   justify-content: space-around;
-
+  align-items: center;
 }
 
 .logo {
   width: 5%;
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 3vw;
   line-height: 56px;
 }
 
 .links {
   width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.links a{
-  font-family: 'Raleway', sans-serif;
+.links a {
+  font-family: "Raleway", sans-serif;
   color: white;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 2vw;
   line-height: 28px;
   text-align: center;
 }
@@ -49,60 +55,75 @@ a {
   justify-content: space-around;
 }
 
+
+
 .icons {
-  width: 12%;
+  width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.icons ul {
-  display: flex;
-  justify-content: space-between;
-}
 
 .icons a {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: white;
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 2vw;
   text-align: center;
+}
+
+.language {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.lang_text p {
+  font-size: 1.2vw;
+  padding: 0;
+  margin: 0;
+}
+
+.lang_icon {
+  /* height: 50vw; */
+
 }
 
 .wrapperText {
   text-align: center;
+  margin-top: 10%;
 }
 
 .wrapperText .title {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: white;
   font-style: normal;
   font-weight: 800;
-  font-size: 144px;
-  line-height: 169px;
-  margin-bottom: 0;
+  font-size: 4vw;
+ 
 }
 
 .wrapperText .subTitle {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: white;
   font-style: normal;
   font-weight: 800;
-  font-size: 96px;
-  line-height: 113px;
-  margin-top: 20px;
-  margin-bottom: 180px;
+  font-size: 3vw;
+
 }
 
 button {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5vw;
   color: white;
-  background: #238FF2;
+  background: #238ff2;
   border-radius: 33px;
-  width: 330px;
-  height: 100px;
+  width: 20%;
+  height: 10vh;
   font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 42px;
   border: none;
+  margin-top: 5rem;
+ 
 }
