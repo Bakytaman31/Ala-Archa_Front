@@ -8,7 +8,7 @@ const MainPage = () => {
   return (
     <center>
       <div className="MainPage_container">
-        {/* <Carorsel /> */}
+        <Carorsel />
         <News />
         <Map />
       </div>
