@@ -11,9 +11,6 @@ export const LOGIN_USER_FAILURE = 'LOGIN_USER_FAILURE';
 
 export const LOGOUT_USER_SUCCESS = 'LOGOUT_USER_SUCCESS';
 
-export const SUBSCRIBE_USER_SUCCESS = 'SUBSCRIBE_USER_SUCCESS';
-export const SUBSCRIBE_USER_FAILURE = 'SUBSCRIBE_USER_FAILURE';
-
 export const registerUserRequest = () => ({type: REGISTER_USER_REQUEST});
 export const registerUserSuccess = () => ({type: REGISTER_USER_SUCCESS});
 export const registerUserFailure = error => ({type: REGISTER_USER_FAILURE, error});
@@ -45,7 +42,7 @@ export const loginUser = userData => {
     return async dispatch => {
         try {
             dispatch(loginUserRequest());
-            const response = await axiosAPI.post('/users/sessions', userData);
+            const response = await axiosAPI.post('/api/v1/auth/token/', userData);
             dispatch(loginUserSuccess(response.data));
             dispatch(push('/'));
         } catch (error) {
@@ -56,6 +53,8 @@ export const loginUser = userData => {
 
 
 export const logoutUser = () => {
+
+//рефрешнуть токен на 0 и просто удалить сессию на локалке
     return async dispatch => {
         await axiosAPI.delete('/users/sessions');
         dispatch(push('/'));

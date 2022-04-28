@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosAPI = axios.create({
-  baseURL: "http://localhost:8000",
+  baseURL: "http://alaarcha.inai.kg/",
 });
 
-export default axios;
+export default axiosAPI;

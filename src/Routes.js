@@ -15,14 +15,16 @@ import AdminPage from "./pages/AdminPage";
 import Header from "./components/header/Header";
 import Login from "./pages/Login";
 import Footer from "./components/footer/Footer";
+import Hotels from "./pages/Hotels/Hotels";
+import Services from "./pages/Services/Services";
 
 const MainRoutes = () => {
   return (
     <BrowserRouter>
-      <Header/>
+      {/* <Header/> */}
       <Routes>
+        <Route path="/login" element={<Login/>}/>
         <Route path="/" element={<MainPage />} />
-        <Route path="/login" element={Login}/>
         {/* <Route path="/signin" element={}/> */}
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/about" element={<AboutPage />} />
@@ -34,9 +36,11 @@ const MainRoutes = () => {
         <Route path="/regulations" element={<RegulationsPage />} />
         <Route path="/tasks" element={<TasksPage />} />
         <Route path="/admin" element={<AdminPage />} />
+        <Route path="/hotels" element={<Hotels />} />
+        <Route path="/services" element={<Services />} />
         {/* <Route path="/admin/userList" element={<AdminPage />} /> */}
       </Routes>
-      <Footer/>
+      {/* <Footer/> */}
     </BrowserRouter>
   );
 };

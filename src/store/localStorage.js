@@ -31,7 +31,7 @@ export const localStorageMiddleware = store => next => action => {
         console.log('need to save to localstorage');
         saveToLocalStorage({
             users: {
-                user: store.getState().users.user
+                user: store.getState().users.user.access
             }
         });
     }

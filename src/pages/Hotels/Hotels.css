@@ -1,0 +1,347 @@
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.hotels{
+    font-family: 'Poppins', sans-serif;
+}
+
+.blocks {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    width: 1080px;
+ }
+
+.block {
+    background-color: #424242;
+    color: #fff;
+    text-align: center;
+    width: 30%;
+    height: 220px;
+    padding-top: 60px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.active {
+    background-color: #fff;
+    color: #424242;
+    text-align: center;
+    width: 30%;
+    height: 220px;
+    padding-top: 60px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.block p {
+    font-size: 17px;
+}
+
+.block h2 {
+    font-size: 30px;
+    margin-top: 45px;
+}
+
+.block svg {
+    height: 27px;
+}
+
+/* Ak-Maral */
+
+.akMaral .rooms {
+    display: flex;
+    justify-content: space-between;
+}
+
+.akMaral .rooms .capacity {
+    margin: 30px 0;
+}
+
+.akMaral .rooms .price span {
+    font-size: 20px;
+}
+
+.akMaral .rooms span {
+    font-weight: bold;
+}
+
+.akMaral .rooms .room2 {
+    border-left: 1px solid;
+    border-right: 1px solid;
+    padding: 0 50px;
+}
+
+.akMaral .linen {
+    width: 35%;
+    padding: 10px 0;
+    margin: 25px 0;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.akMaral .conference {
+    margin-bottom: 200px;
+}
+
+.akMaral .conference .capacity {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.akMaral .conference span {
+    font-weight: bold;
+}
+
+.akMaral .conference .price .totalPrice {
+    font-size: 20px;
+}
+
+/* Alplager */
+
+.alpLager .room {
+    display: flex;
+    justify-content:left
+}
+
+.alpLager .room .image{
+    margin: 0 67px;
+}
+
+.alpLager .room .description {
+    margin: 0;
+}
+
+.alpLager .room .description .capacity {
+    margin: 30px 0;
+}
+
+.alpLager .room .description .capacity span {
+    font-weight: bold;
+}
+
+.alpLager .room .description .price span{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.alpLager .room .description .services {
+    border-top: 1px solid;
+    margin-top: 10px;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.alpLager .otherServices {
+    display: flex;
+    border-top: 1px solid;
+    margin: 50px 0px 200px 67px;
+    width: 85%;
+    padding-top: 40px;
+}
+
+.alpLager .otherServices .room1, .room2, .room3 {
+    margin: 0 auto;
+}
+
+.alpLager .otherServices .room2 {
+    border-left: 1px solid;
+    border-right: 1px solid;
+    padding: 0 40px;
+}
+
+.alpLager .otherServices h3 {
+    font-size: 20px;
+}
+
+.alpLager .otherServices .price {
+    margin-top: 20px;
+}
+
+.alpLager .otherServices .price span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Ala-Archa */
+
+.alaArcha .room {
+    display: flex;
+    margin: 65px 0;
+}
+
+.alaArcha .room .description h3 {
+    font-size: 20px;
+}
+
+.alaArcha .room .description .capacity {
+    margin: 30px 0;
+}
+
+.alaArcha .room .description .capacity span {
+    font-weight: bold;  
+}
+
+.alaArcha .room .description .price span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.alaArcha .room .description .icons {
+    width: 25%;
+}
+
+.alaArcha .room .icons img {
+    width: 23%;
+}
+
+.alaArcha .room .icons span {
+    vertical-align: 25px;
+}
+
+.alaArcha .linen {
+    width: 40%;
+    padding: 10px 0;
+    margin: 30px;
+}
+
+.alaArcha .arrive {
+    width: 50%;
+    padding: 10px 0;
+    margin: 30px;
+}
+
+.alaArcha .otherServices {
+    display: flex;
+    margin-bottom: 200px;
+}
+
+.alaArcha .otherServices .image {
+    width: 25%;
+}
+
+.alaArcha .otherServices .image img {
+    width: 100%;
+}
+
+.alaArcha .otherServices .rooms {
+    display: flex;
+    justify-content: space-between;
+}
+
+.alaArcha .otherServices .room {
+    display: block;
+    width: 33%;
+    margin: 0 10px;
+}
+
+.alaArcha .otherServices .rooms .unit {
+    width: 100%;
+}
+
+.alaArcha .otherServices .rooms .bordered {
+    border-left: 1px solid;
+    border-right: 1px solid;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.alaArcha .otherServices .rooms .upperborder {
+    border-top: 1px solid;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.alaArcha .otherServices .room h3 {
+    font-size: 20px;
+}
+
+.alaArcha .otherServices .room .capacity {
+    margin: 30px 0;
+}
+
+.alaArcha .otherServices .room .capacity span {
+    font-weight: bold;
+}
+
+.alaArcha .otherServices .room .price span{
+    font-weight: bold;
+}
+
+.alaArcha .otherServices .room .price .total {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1070px){
+    .blocks {
+        display: block;
+    }
+
+    .block {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .active {
+        width: 100%;
+    }
+    
+    .alaArcha .room {
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid;
+    }
+
+    .alaArcha .room .icons img {
+        width: 6%;
+    }
+
+    .alaArcha .otherServices {
+        display: block;
+        text-align: center;
+    }
+
+    .alaArcha .otherServices .rooms {
+        display: block;
+    }
+
+    .alaArcha .otherServices .rooms .room {
+        width: 100%;
+        border-left: none;
+        margin: 0 0 20px 0;
+    }
+
+    .alaArcha .otherServices .rooms .bordered {
+        border-right: none;
+        padding: 0;
+    }
+
+    .alaArcha .otherServices .rooms .upperborder {
+        padding: 0;
+        border-top: none; 
+    }
+
+    .akMaral .rooms {
+        display: block;
+        text-align: center;
+    }
+
+    .akMaral .rooms .room1 {
+        padding-left: 10px;
+    }
+
+    .akMaral .rooms .room3 {
+        padding-left: 10px;
+    }
+
+    .akMaral .linen {
+        padding: 10px 10px;
+    }
+
+    .akMaral .conference {
+        padding-left: 10px;
+    }
+}

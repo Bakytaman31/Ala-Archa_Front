@@ -1,0 +1,50 @@
+.wrapper {
+  width: 100%;
+
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+
+  .center  {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .navlink {
+      margin:0%;
+      width: 20%;
+
+      a {
+        text-decoration: none;
+        color:#ECECECFC;
+        font-style: normal;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+  .right{
+    .items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .item {
+        margin: 0 3%;
+
+        p {
+          color:#ECECECFC;
+        font-style: normal;
+        }
+      }
+    }
+
+    .hr {
+      width: 4.5em;
+    }
+  }
+}
