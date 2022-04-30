@@ -75,8 +75,10 @@ export const orderYurt = data => {
 export const orderHotel = data => {
     return async dispatch => {
         try {
+            console.log(token);
             dispatch(orderHotelRequest);
-            const res  = await axiosAPI.post('/api/v1/order/yurt_room/create/', {headers: headers}, data);
+            const res  = await axiosAPI.post('/api/v1/order/hotel_room/create/', data, {headers: headers});
+            console.log(res);
         } catch (e) {
             console.log(e)
         }

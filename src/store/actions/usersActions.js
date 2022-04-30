@@ -47,6 +47,7 @@ export const loginUser = userData => {
             dispatch(loginUserRequest());
             const response = await axiosAPI.post('/api/v1/auth/token/', userData);
             dispatch(loginUserSuccess(response.data));
+            //navigate("/")
             
         } catch (error) {
             // dispatch(loginUserFailure(error.response.data));

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {loginUser, logoutUser} from "../store/actions/usersActions";
 import {connect, useDispatch, useSelector} from "react-redux";
-import { getYurts, orderYurt } from '../store/actions/ordersActions';
+import { getYurts, orderYurt, orderHotel } from '../store/actions/ordersActions';
 
 export default function Login() {
   const error = useSelector((state) => state.error);
@@ -15,14 +15,16 @@ export default function Login() {
 
     //order yurt
     const [yurtId, setYurtId] = useState("");
-    const [reservationStartDateTime, setreRervationStartDate] = useState("");
-    const [reservationEndDateTime, setReservationEndDate] = useState("");
-    const [firstName, setFirstName] = useState("");
-    const [lastName, setLastName] = useState("");
+    const [reservationStartDateTime, setreRervationStartDateTime] = useState("");
+    const [reservationEndDateTime, setReservationEndDateTime] = useState("");
+    const [first_name, setFirstName] = useState("");
+    const [last_name, setLastName] = useState("");
 
     //order hotel
-    const [hotelId, setHotelId] = useState("");
-    
+    const [roomId, setHotelId] = useState("");
+    const [reservationStartDate, setReservationStartDate] = useState("");
+    const [reservationEndDate, setReservationEndDate] = useState("");
+
 
 
     const submitFormHandler = event => {
@@ -42,7 +44,26 @@ export default function Login() {
 
     const createYurtOrder = event => {
       event.preventDefault();
-      dispatch(orderYurt({yurtId, reservationStartDateTime, reservationEndDateTime, firstName, lastName}))
+      dispatch(orderYurt({yurtId, 
+        reservationStartDateTime, 
+        reservationEndDateTime, 
+        first_name, 
+        last_name, 
+        status: "booked", 
+        services: [] //в дальнейшем этого не будет
+      }))
+    }
+
+    const createHotelOrder = event => {
+      event.preventDefault();
+      dispatch(orderHotel({roomId, 
+        reservationStartDate, 
+        reservationEndDate, 
+        first_name, 
+        last_name, 
+        status: "booked", 
+        services: [] //в дальнейшем этого не будет
+      }))
     }
 
   return (
@@ -88,7 +109,7 @@ export default function Login() {
             <input
               type="text"
               value={reservationStartDateTime}
-              onChange={e => setreRervationStartDate(e.target.value)}
+              onChange={e => setreRervationStartDateTime(e.target.value)}
             />
           </label>
           <br></br>
@@ -98,7 +119,7 @@ export default function Login() {
             <input
               type="text"
               value={reservationEndDateTime}
-              onChange={e => setReservationEndDate(e.target.value)}
+              onChange={e => setReservationEndDateTime(e.target.value)}
             />
           </label>
           <br></br>
@@ -107,7 +128,7 @@ export default function Login() {
             Имя
             <input
               type="text"
-              value={firstName}
+              value={first_name}
               onChange={e => setFirstName(e.target.value)}
             />
           </label>
@@ -117,7 +138,7 @@ export default function Login() {
             Фамилия
             <input
               type="text"
-              value={lastName}
+              value={last_name}
               onChange={e => setLastName(e.target.value)}
             />
           </label>
@@ -127,16 +148,58 @@ export default function Login() {
         <br></br>
         <br></br>
         {/* hotels */}
-        <form>
+        <form onSubmit={createHotelOrder}>
           <h1>Создание заказа на отель</h1>
           <label>
             id отеля
             <input
               type="text"
-              value={hotelId}
-              onChange={setHotelId}
+              value={roomId}
+              onChange={e => setHotelId(e.target.value)}
             />
           </label>
+          <br></br>
+          <br></br>
+          <label>
+            Начало брони
+            <input
+              type="text"
+              value={reservationStartDate}
+              onChange={e => setReservationStartDate(e.target.value)}
+            />
+          </label>
+          <br></br>
+          <br></br>
+          <label>
+            Конец брони
+            <input
+              type="text"
+              value={reservationEndDate}
+              onChange={e => setReservationEndDate(e.target.value)}
+            />
+          </label>
+          <br></br>
+          <br></br>
+          <label>
+            Имя
+            <input
+              type="text"
+              value={first_name}
+              onChange={e => setFirstName(e.target.value)}
+            />
+          </label>
+          <br></br>
+          <br></br>
+          <label>
+            Фамилия
+            <input
+              type="text"
+              value={last_name}
+              onChange={e => setLastName(e.target.value)}
+            />
+          </label>
+          <br></br>
+          <button type="submit">Заказать комнату в отеле</button>
         </form>
     </div>
   );
