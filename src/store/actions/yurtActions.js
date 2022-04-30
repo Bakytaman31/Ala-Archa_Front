@@ -5,9 +5,9 @@ import { loadFromLocalStorage } from '../localStorage.js';
 let token;
 
 try{
-    token = loadFromLocalStorage().users.user
+    token = loadFromLocalStorage().users.user.access;
 } catch(e) {
-    token = "token"
+    token = "token";
 }
 
 const headers = {

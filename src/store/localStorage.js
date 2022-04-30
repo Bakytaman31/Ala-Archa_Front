@@ -1,4 +1,4 @@
-import {LOGIN_USER_SUCCESS, LOGOUT_USER_SUCCESS} from "./actions/usersActions";
+import {LOGIN_USER_SUCCESS, LOGOUT_USER} from "./actions/usersActions";
 
 export const saveToLocalStorage = state => {
     try {
@@ -22,7 +22,7 @@ export const loadFromLocalStorage = () => {
     }
 };
 
-const actions = [LOGOUT_USER_SUCCESS, LOGIN_USER_SUCCESS];
+const actions = [LOGOUT_USER, LOGIN_USER_SUCCESS];
 
 export const localStorageMiddleware = store => next => action => {
     let result = next(action);
@@ -31,7 +31,7 @@ export const localStorageMiddleware = store => next => action => {
         console.log('need to save to localstorage');
         saveToLocalStorage({
             users: {
-                user: store.getState().users.user.access
+                user: store.getState().users.user
             }
         });
     }
